@@ -1,9 +1,13 @@
 @import url("https://fonts.googleapis.com/css?family=Dancing+Script|Lato&display=swap");
+
+/*--------------------------reset--------------------------------------*/
+
+
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -11,6 +15,8 @@ body {
   color: white;
   font-family: 'Lato', sans-serif;
 }
+
+/*--------------------------header styling--------------------------------------*/
 
 header {
   position: relative;
@@ -54,6 +60,8 @@ header .quote h2 {
   }
 }
 
+/*--------------------------navigation styling--------------------------------------*/
+
 .navbar {
   width: 100%;
   position: -webkit-sticky;
@@ -68,12 +76,12 @@ header .quote h2 {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
 }
 
 .navbar ul li {
@@ -93,14 +101,14 @@ header .quote h2 {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 23px;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 @media screen and (max-width: 680px) {
@@ -114,16 +122,18 @@ header .quote h2 {
   color: black;
 }
 
-/*--------------------------------About Us gallery styling----------------------------*/
+/*--------------------------------About Us section styling----------------------------*/
+
+
 .about-gallery {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
 }
 
 @media screen and (max-width: 1100px) {
@@ -162,7 +172,7 @@ header .quote h2 {
 
 .about-gallery .storephoto:hover img {
   -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .about-gallery .storephoto img {
@@ -179,23 +189,26 @@ header .quote h2 {
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   opacity: 1;
   z-index: 1;
 }
+
+
+/*--------------------------------Our Bookstores section styling----------------------------*/
 
 .address {
   font-size: 20px;
   margin-top: 20px;
 }
 
-.address > p {
+.address>p {
   font-size: 30px;
   text-align: center;
 }
 
 @media screen and (max-width: 880px) {
-  .address > p {
+  .address>p {
     font-size: 20px;
   }
 }
@@ -205,28 +218,28 @@ header .quote h2 {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   margin: auto;
   -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
 }
 
 @media screen and (max-width: 880px) {
   .address .shop-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-flow: column wrap;
-            flex-flow: column wrap;
+    -ms-flex-flow: column wrap;
+    flex-flow: column wrap;
   }
 }
 
 .address .shop-container .shop {
   margin: 2rem auto;
-  border-right: white solid 3px;
+  border-left: white solid 3px;
   padding: 0 2rem;
   max-width: 40%;
 }
@@ -234,9 +247,65 @@ header .quote h2 {
 @media screen and (max-width: 880px) {
   .address .shop-container .shop {
     margin: 1rem auto;
-    border-right: 0;
+    border-left: 0;
     border-bottom: white solid 3px;
     padding: 2rem 0;
   }
 }
+
+
+/*--------------------------------Contact section styling----------------------------*/
+
+.contact-section {
+  width: 100%;
+  min-height: 15vh;
+  background-color: rgba(53, 45, 45, 0.986);
+  font-size: 30px;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.contact-section>p {
+  font-size: 30px;
+  margin: 20px auto 20px;
+}
+
+@media screen and (max-width: 880px) {
+  .contact-section>p {
+    font-size: 20px;
+  }
+}
+
+.contact-section .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  width: 70%;
+  margin: auto;
+}
+
+.contact-section .icons li {
+  list-style-type: none;
+  display: inline-block;
+  text-align: center;
+  width: 25%;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+
+@media screen and (max-width: 880px) {
+  .contact-section .icons li {
+    width: 50%;
+  }
+}
+
+.contact-section .icons li:hover {
+  color: #af7e21;
+}
+
 /*# sourceMappingURL=style.css.map */
