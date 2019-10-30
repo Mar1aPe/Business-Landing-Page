@@ -8,6 +8,8 @@
 
 body {
   background-color: rgba(53, 45, 45, 0.534);
+  color: white;
+  font-family: 'Lato', sans-serif;
 }
 
 header {
@@ -17,7 +19,6 @@ header {
   background-image: url(./images/header-image.jpg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  color: white;
   font-family: 'Dancing Script', cursive;
 }
 
@@ -58,6 +59,7 @@ header .quote h2 {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
+  z-index: 2;
 }
 
 .navbar ul {
@@ -77,7 +79,6 @@ header .quote h2 {
 .navbar ul li {
   list-style-type: none;
   margin: 10px auto;
-  color: white;
 }
 
 @media screen and (max-width: 680px) {
@@ -87,6 +88,7 @@ header .quote h2 {
 }
 
 .navbar ul a {
+  color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -94,8 +96,6 @@ header .quote h2 {
       -ms-flex-positive: 1;
           flex-grow: 1;
   padding: 14px 16px;
-  color: white;
-  font-family: 'Lato', sans-serif;
   text-decoration: none;
   font-size: 23px;
   -webkit-box-pack: center;
@@ -133,7 +133,6 @@ header .quote h2 {
 }
 
 .about-gallery .storephoto {
-  color: white;
   font-family: 'Dancing Script', cursive;
   font-size: 25px;
   width: 30%;
@@ -171,8 +170,8 @@ header .quote h2 {
   height: 100%;
   position: relative;
   z-index: -1;
-  -webkit-transition: all .2s ease-in-out;
-  transition: all .2s ease-in-out;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
 }
 
 .about-gallery .storephoto p {
@@ -183,5 +182,61 @@ header .quote h2 {
           transform: translate(-50%, -50%);
   opacity: 1;
   z-index: 1;
+}
+
+.address {
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.address > p {
+  font-size: 30px;
+  text-align: center;
+}
+
+@media screen and (max-width: 880px) {
+  .address > p {
+    font-size: 20px;
+  }
+}
+
+.address .shop-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: auto;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+@media screen and (max-width: 880px) {
+  .address .shop-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+  }
+}
+
+.address .shop-container .shop {
+  margin: 2rem auto;
+  border-right: white solid 3px;
+  padding: 0 2rem;
+  max-width: 40%;
+}
+
+@media screen and (max-width: 880px) {
+  .address .shop-container .shop {
+    margin: 1rem auto;
+    border-right: 0;
+    border-bottom: white solid 3px;
+    padding: 2rem 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */
