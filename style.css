@@ -1,22 +1,16 @@
 @import url("https://fonts.googleapis.com/css?family=Dancing+Script|Lato&display=swap");
-
-/*--------------------------reset--------------------------------------*/
-
-
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
   background-color: rgba(53, 45, 45, 0.534);
   color: white;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
 }
-
-/*--------------------------header styling--------------------------------------*/
 
 header {
   position: relative;
@@ -25,7 +19,7 @@ header {
   background-image: url(./images/header-image.jpg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  font-family: 'Dancing Script', cursive;
+  font-family: "Dancing Script", cursive;
 }
 
 @media screen and (max-width: 680px) {
@@ -60,8 +54,6 @@ header .quote h2 {
   }
 }
 
-/*--------------------------navigation styling--------------------------------------*/
-
 .navbar {
   width: 100%;
   position: -webkit-sticky;
@@ -76,12 +68,12 @@ header .quote h2 {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-flex: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+      flex-wrap: wrap;
   -ms-flex-pack: distribute;
-  justify-content: space-around;
+      justify-content: space-around;
 }
 
 .navbar ul li {
@@ -101,14 +93,14 @@ header .quote h2 {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-flex: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 23px;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 @media screen and (max-width: 680px) {
@@ -122,18 +114,16 @@ header .quote h2 {
   color: black;
 }
 
-/*--------------------------------About Us section styling----------------------------*/
-
-
+/*--------------------------------About Us gallery styling----------------------------*/
 .about-gallery {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-flex: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 @media screen and (max-width: 1100px) {
@@ -143,7 +133,7 @@ header .quote h2 {
 }
 
 .about-gallery .storephoto {
-  font-family: 'Dancing Script', cursive;
+  font-family: "Dancing Script", cursive;
   font-size: 25px;
   width: 30%;
   height: 50vh;
@@ -172,7 +162,7 @@ header .quote h2 {
 
 .about-gallery .storephoto:hover img {
   -webkit-transform: scale(1.1);
-  transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .about-gallery .storephoto img {
@@ -189,26 +179,24 @@ header .quote h2 {
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   opacity: 1;
   z-index: 1;
 }
 
-
 /*--------------------------------Our Bookstores section styling----------------------------*/
-
 .address {
   font-size: 20px;
   margin-top: 20px;
 }
 
-.address>p {
+.address > p {
   font-size: 30px;
   text-align: center;
 }
 
 @media screen and (max-width: 880px) {
-  .address>p {
+  .address > p {
     font-size: 20px;
   }
 }
@@ -218,22 +206,22 @@ header .quote h2 {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-flex: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+      flex-wrap: wrap;
   margin: auto;
   -webkit-box-pack: space-evenly;
-  -ms-flex-pack: space-evenly;
-  justify-content: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 @media screen and (max-width: 880px) {
   .address .shop-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-flow: column wrap;
-    flex-flow: column wrap;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
   }
 }
 
@@ -253,9 +241,7 @@ header .quote h2 {
   }
 }
 
-
 /*--------------------------------Contact section styling----------------------------*/
-
 .contact-section {
   width: 100%;
   min-height: 15vh;
@@ -265,47 +251,70 @@ header .quote h2 {
   padding-bottom: 10px;
 }
 
-.contact-section>p {
+.contact-section > p {
   font-size: 30px;
-  margin: 20px auto 20px;
+  margin: 10px auto 20px;
+  -webkit-animation: text-change 1.5s linear infinite;
+          animation: text-change 1.5s linear infinite;
 }
 
 @media screen and (max-width: 880px) {
-  .contact-section>p {
+  .contact-section > p {
     font-size: 20px;
   }
 }
 
-.contact-section .icons {
+.contact-section .icons ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-flex: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   width: 70%;
   margin: auto;
+  list-style-type: none;
 }
 
-.contact-section .icons li {
-  list-style-type: none;
+.contact-section .icons ul li {
   display: inline-block;
   text-align: center;
   width: 25%;
   -ms-flex-pack: distribute;
-  justify-content: space-around;
+      justify-content: space-around;
 }
 
 @media screen and (max-width: 880px) {
-  .contact-section .icons li {
+  .contact-section .icons ul li {
     width: 50%;
   }
 }
 
-.contact-section .icons li:hover {
+.contact-section .icons ul li a {
+  color: white;
+}
+
+.contact-section .icons ul li a:hover {
   color: #af7e21;
 }
 
+@-webkit-keyframes text-change {
+  from {
+    color: white;
+  }
+  to {
+    color: #af7e21;
+  }
+}
+
+@keyframes text-change {
+  from {
+    color: white;
+  }
+  to {
+    color: #af7e21;
+  }
+}
 /*# sourceMappingURL=style.css.map */
